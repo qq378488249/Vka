@@ -1,6 +1,5 @@
 package cc.chenghong.vka.activity;
 
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
