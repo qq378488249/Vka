@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/fl"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:text="紫菜蛋汤" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_circle_point"
+        android:text="1" />
+
+</FrameLayout>

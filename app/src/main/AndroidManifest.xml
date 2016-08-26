@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cc.chenghong.vka.activity"
+    android:versionCode="3"
+    android:versionName="1.2 build 20160812">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 屏蔽HOME键需要的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许应用拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许应用发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 扫一扫 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="cc.chenghong.vka.app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- <activity -->
+        <!-- android:name=".Order_Details_Activity" -->
+        <!-- android:label="@string/title_activity_order__details_"></activity> -->
+        <activity
+            android:name=".StartActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cc.chenghong.vka.code.qr_codescan.MipcaActivityCapture" />
+        <activity
+            android:name=".Get_Money_DetailsActivity"
+            android:label="@string/title_activity_get__money__details_main" />
+        <activity
+            android:name=".Vip_pay_DetailsActivity"
+            android:label="@string/title_activity_vip_pay__details" />
+        <activity
+            android:name=".VipSweepCardActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:label="@string/title_activity_vip_pay" />
+        <activity
+            android:name=".VipPayActivity"
+            android:label="@string/title_activity_vip_pay" />
+        <activity
+            android:name=".VipFindActivity"
+            android:label="@string/title_activity_vip_find" />
+        <activity
+            android:name=".VipRechargeActivity"
+            android:label="@string/title_activity_vip_recharge" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:label="@string/title_activity_order_details" />
+        <activity
+            android:name=".VipDealActivity"
+            android:label="@string/title_activity_vip_deal" />
+        <activity
+            android:name=".CheckTicketRecordActivity"
+            android:label="@string/title_activity_check_ticket_record" />
+        <!-- <activity -->
+        <!-- android:name=".TakePayActivity" -->
+        <!-- android:label="@string/title_activity_take_pay"></activity> -->
+        <!-- <activity -->
+        <!-- android:name=".MyProgressActivity" -->
+        <!-- android:label="@string/title_activity_my_progress"></activity> -->
+        <activity android:name=".NewMemberActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"></activity>
+    </application>
+
+</manifest>

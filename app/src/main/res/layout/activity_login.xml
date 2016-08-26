@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/et_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_login"
+                android:gravity="center"
+                android:hint="总店编号"
+                android:inputType="none"></EditText>
+
+            <EditText
+                android:id="@+id/et_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_login"
+                android:gravity="center"
+                android:hint="门店编号"
+                android:inputType="none"></EditText>
+
+            <EditText
+                android:id="@+id/et_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_login"
+                android:gravity="center"
+                android:hint="账户"
+                android:inputType="text"></EditText>
+
+            <EditText
+                android:id="@+id/et_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_login"
+                android:gravity="center"
+                android:hint="密码"
+                android:inputType="textPassword"></EditText>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/shape_straight_theme_theme"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView style="@style/fww" />
+
+            <LinearLayout
+                style="@style/fwh"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/ww"
+                    android:text="技术支持：" />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="上海澄泓信息科技有限公司"
+                    android:textColor="#eb5500" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fwh"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/ww"
+                    android:text="商务电话：" />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="15001819885,18601694368"
+                    android:textColor="#eb5500" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

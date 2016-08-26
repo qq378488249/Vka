@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme"></View>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_height="0.1dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_radiobutton1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="收银"
+            android:textColor="@drawable/selector_main_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_radiobutton2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="订单"
+            android:textColor="@drawable/selector_main_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_radiobutton4"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="会员"
+            android:textColor="@drawable/selector_main_tv" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_main_radiobutton3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="设置"
+                android:textColor="@drawable/selector_main_tv" />
+
+            <ImageView
+                android:id="@+id/iv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dian" />
+        </FrameLayout>
+    </RadioGroup>
+
+</LinearLayout>

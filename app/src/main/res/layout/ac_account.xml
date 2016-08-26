@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ffv"
+    android:background="@color/main_bg"
+     >
+    <LinearLayout style="@style/fw"
+        android:layout_marginTop="10dip"
+        >
+        <LinearLayout style="@style/fwwv" >
+        <CheckBox 
+            android:id="@+id/cb_login"
+            style="@style/fww"
+            android:button="@null"
+            android:text="登录"
+            android:gravity="center"
+            android:padding="8dip"
+            android:textSize="20sp"
+            android:clickable="false"
+            android:checked="true"
+            android:textColor="@drawable/account_textcolor_selector"
+            />
+       
+        </LinearLayout>
+        <View android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:background="#8E8988"
+            android:layout_marginBottom="8dip"/>
+        <LinearLayout style="@style/fwwv">
+         <CheckBox 
+             android:id="@+id/cb_regist"
+             style="@style/fww"
+            android:button="@null"
+            android:text="注册"
+            android:gravity="center"
+            android:padding="8dip"
+            android:textSize="20sp"
+            android:clickable="false"
+            android:textColor="@drawable/account_textcolor_selector"
+            />
+         </LinearLayout>
+    </LinearLayout>
+    <com.p.lib.widget.ScrollLinearLayout 
+        android:id="@+id/sl_line"
+        android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            >
+     <View 
+         android:id="@+id/v_line"
+         android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:background="#7A6251"
+            />
+     </com.p.lib.widget.ScrollLinearLayout>
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/text_gray"/>
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fl_account"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+         >
+    </FrameLayout>
+</LinearLayout>

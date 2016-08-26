@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- title背景,主颜色 -->
+    <!-- <color name="main_bg">#F9F9F9</color> -->
+    <color name="main_bg">#EBEBEB</color>
+    <!-- 背景，深灰色 -->
+    <color name="main_bg2">#D9D9D9</color>
+    <!-- 纯黑色 -->
+    <!-- <color name="text_black">#2A2A2A</color> -->
+    <color name="text_black">#676767</color>
+    <!-- 灰色字体 -->
+    <!-- <color name="text_gray">#696969</color> -->
+    <color name="text_gray">#9DA1A2</color>
+    <!-- 灰色的背景 -->
+    <color name="bg_gray">#EFEFEF</color>
+    <!-- 浅灰色 -->
+    <color name="light_gray">#FAFAFA</color>
+    <!-- 标题字体棕色 -->
+    <color name="title_color">#7A6251</color>
+    <!-- 字体红色色 -->
+    <color name="text_red">#D22E2E</color>
+
+    <color name="line_gray">#cccccc</color>
+    <!-- 卡包背景色-橘红色 -->
+    <color name="cards_orange">#F07148</color>
+    <!-- 卡包背景色-天蓝色 -->
+    <color name="cards_sky_blue">#2ECEF0</color>
+    <!-- 卡包背景色-浅蓝色 -->
+    <color name="cards_blue">#0CD7D0</color>
+    <!-- 卡包背景色-1 -->
+    <color name="cards_one">#fd8c7a</color>
+    <!-- 卡包背景色-2 -->
+    <color name="cards_two">#7fc8e9</color>
+    <!-- 卡包背景色-3 -->
+    <color name="cards_three">#86cbc6</color>
+    <!-- 交易记录-圆圈的红色 -->
+    <color name="history_red">#DB3825</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 天蓝色 -->
+    <color name="gray">#808080</color>
+
+    <color name="zhutise">#836FFF</color>
+    <color name="weixuanzhong">#FFD39B</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="select">#5fbbfe</color>
+    <color name="bgcolor">#cccccc</color>
+    <color name="unselect">#a0a0a0</color>
+    <!-- 天蓝色 -->
+    <color name="sky_blue">#00BFFF</color>
+    <!-- 灰色 -->
+    <!--<color name="gray">#cccccc</color>-->
+    <!-- 浅灰色 -->
+    <color name="gray_low">#EFEFEF</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFFF00</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 浅黑色 -->
+    <color name="black_low">#666666</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 橙色 -->
+    <color name="orange">#FFD700</color>
+    <!-- 紫色 -->
+    <color name="purple">#EE00EE</color>
+    <!-- 主题色 -->
+    <color name="theme">#eb5500</color>
+
+
+    <!-- title背景,主颜色 -->
+    <!--<color name="main_bg">#FF6F4D</color>-->
+    <!-- 红色文字 -->
+    <!--<color name="text_red">#FF6F4D</color>-->
+    <!-- 纯黑色 -->
+    <!--<color name="text_black">#2A2A2A</color>-->
+    <!-- 灰色字体 -->
+    <!--<color name="text_gray">#696969</color>-->
+    <!-- 浅灰色字体 -->
+    <color name="text_light">#BDBDBD</color>
+
+    <!-- 二维码的颜色 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="color0">#DC143C</color>
+    <color name="color1">#458B00</color>
+    <color name="color2">#228B22</color>
+    <color name="color3">#8B475D</color>
+    <color name="color4">#27408B</color>
+    <color name="color5">#006400</color>
+
+    <color name="login_bottom">#D09140</color>
+</resources>

@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        style="@style/ffwv"
+        android:id="@+id/sv_order"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bg"
+            android:orientation="vertical"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/tv_more"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/ll_bg_selector"
+                android:padding="13dip"
+                android:drawableRight="@drawable/icon_goto"
+                android:text="@string/tv_write_address" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/tv_more"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_weight="0"
+                android:background="@drawable/ll_bg_selector"
+                android:padding="13dip"
+                android:drawableRight="@drawable/icon_goto"
+                android:text="@string/tv_write_phone" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="@color/line_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_card"
+                style="@style/fw"
+                android:background="@drawable/ll_bg_selector"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_card"
+                    style="@style/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/ll_bg_selector"
+                    android:gravity="center"
+                    android:padding="13dip"
+                    android:text="@string/tv_card_msg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_money"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_weight="5"
+                    android:background="@drawable/ll_bg_selector"
+                    android:gravity="center"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        style="@style/ww"
+                        android:drawableLeft="@drawable/icon_money"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_jifen"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_weight="4"
+                    android:background="@drawable/ll_bg_selector"
+                    android:gravity="center"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/tv_jifen"
+                        style="@style/ww"
+                        android:drawableLeft="@drawable/icon_jifen"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/app_text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quan"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_weight="4"
+                    android:background="@drawable/ll_bg_selector"
+                    android:gravity="center"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/tv_quan"
+                        style="@style/ww"
+                        android:drawableLeft="@drawable/icon_quan"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/app_text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+			<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="@color/line_gray" />
+            <TextView
+                android:id="@+id/tv_youhui"
+                style="@style/tv_more"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/ll_bg_selector"
+                android:padding="13dip"
+                android:singleLine="true"
+                android:drawableRight="@drawable/icon_goto"
+                android:text="使用优惠券" />
+            
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="@color/line_gray" />
+
+            <TextView
+                style="@style/tv_more"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@color/white"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/tv_choose_pay" />
+
+            <LinearLayout
+                android:id="@+id/rg_pay_type"
+                style="@style/fwh"
+                android:background="@color/white"
+                android:paddingBottom="20dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" >
+
+                <CheckBox
+                    android:id="@+id/btn_vip"
+                    style="@style/rb_pay_ok"
+                    android:text="@string/btn_pay_vip" />
+
+                <CheckBox
+                    android:id="@+id/btn_cod"
+                    style="@style/rb_pay_ok"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:text="@string/btn_pay_cod" />
+
+                <Button
+                    android:id="@+id/btn_zfb"
+                    style="@style/rb_pay"
+                    android:clickable="false"
+                    android:text="@string/btn_pay_zfb" />
+
+                <Button
+                    android:id="@+id/btn_wechat"
+                    style="@style/rb_pay"
+                    android:layout_marginRight="5dip"
+                    android:clickable="false"
+                    android:text="@string/btn_pay_wechat" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="@color/line_gray" />
+
+            <cc.chenghong.vka.view.NestedListView
+                android:id="@+id/lv_order"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/line_gray"
+                android:dividerHeight="0.01dip"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.01dip"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            style="@style/ffh"
+            android:background="@color/white"
+            android:paddingLeft="5dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_all_money"
+                style="@style/ww"
+                android:text="原价:￥15.00"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/app_text_size_small" />
+			<TextView
+                android:id="@+id/tv_discount_money"
+                style="@style/ww"
+                android:text="(-￥20)"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/app_text_size_small" />
+            
+            <TextView
+                android:id="@+id/tv_total_money"
+                style="@style/fww"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:text="总计:￥15.00"
+                android:paddingLeft="5dip"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/app_text_size_small" />
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/ww"
+                android:layout_marginTop="12dip"
+                android:layout_marginBottom="12dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/btn_bg_orange"
+                android:text="提交支付"
+                
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

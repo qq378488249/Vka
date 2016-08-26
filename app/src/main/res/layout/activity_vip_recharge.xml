@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 会员卡支付开始 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:background="@color/theme" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="会员充值"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:src="@drawable/fh" />
+    </FrameLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:background="@color/gray_low"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_straight_theme_white"
+            android:hint="请输入会员卡号"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_straight_theme_theme"
+            android:text="充值"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <cc.chenghong.vka.view.RefreshFrameLayout
+        android:id="@+id/rv"
+        android:layout_weight="1"
+        style="@style/ff" >
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_low"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </cc.chenghong.vka.view.RefreshFrameLayout>
+
+    
+
+</LinearLayout>

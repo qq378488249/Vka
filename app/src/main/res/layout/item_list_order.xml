@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <LinearLayout style="@style/fw" >
+
+        <cc.chenghong.vka.view.RoundImageViewFive
+            android:id="@+id/iv_icon"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_loading" />
+
+        <LinearLayout
+            style="@style/ffv"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:textSize="@dimen/app_text_size_big" />
+
+            <LinearLayout
+                style="@style/ffwh"
+                android:gravity="bottom" >
+
+                <LinearLayout
+                    style="@style/fwh"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        style="@style/fww"
+                        android:gravity="left"
+                        android:textColor="@color/text_red"
+                        android:textSize="@dimen/app_text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_msg"
+                        style="@style/ww"
+                        android:layout_margin="5dip"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/app_text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

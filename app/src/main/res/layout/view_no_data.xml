@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_no_data"
+    style="@style/ff"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        style="@style/ww"
+        android:src="@drawable/no_data" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme"
+        android:text="" />
+
+</LinearLayout>

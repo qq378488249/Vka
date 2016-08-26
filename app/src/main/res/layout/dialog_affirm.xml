@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            style="@style/fw"
+            android:id="@+id/tv_name"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/theme"
+            android:textSize="20sp"
+            android:text="退出登陆？"
+            />
+        
+        <TextView
+            style="@style/fw"
+            android:id="@+id/tv_money"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/theme"
+            android:textSize="20sp"
+            android:text="退出登陆？"
+            />
+        
+        <TextView
+            style="@style/fw"
+            android:id="@+id/tv_card"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/theme"
+            android:textSize="20sp"
+            android:text="退出登陆？"
+            />
+
+        <View
+            style="@style/line"/>
+
+        <LinearLayout style="@style/fwh" >
+
+            <TextView
+                android:id="@+id/tv_no"
+                style="@style/fww"
+                android:gravity="center"
+                android:padding="15dip"
+                android:textColor="@color/black"
+                android:text="取消"
+                 />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_low" />
+
+            <TextView
+                android:id="@+id/tv_yes"
+                style="@style/fww"
+                android:textColor="@color/sky_blue"
+                android:gravity="center"
+                android:padding="15dip"
+                android:text="确定"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

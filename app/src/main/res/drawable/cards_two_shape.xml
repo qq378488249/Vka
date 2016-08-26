@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- <solid android:color="@color/cards_sky_blue"/> -->
+	<solid android:color="@color/cards_two"/>
+	<corners android:radius="6dip"/>
+</shape>

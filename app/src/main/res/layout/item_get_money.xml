@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rv"
+    android:padding="10dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/iv"
+        android:text="订单编号" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_alignLeft="@+id/tv_number"
+        android:layout_below="@+id/tv_number"
+        android:gravity="center_vertical"
+        android:text="05-6" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/tv_number"
+        android:layout_alignBottom="@+id/tv_number"
+        android:layout_alignParentRight="true"
+        android:text="65.00" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_time"
+        android:layout_alignRight="@+id/tv_money"
+        android:text="TextView"
+        android:textColor="@color/theme" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/bt_submit"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="取消订单" />
+
+</LinearLayout>
